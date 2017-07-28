@@ -1,0 +1,21 @@
+# Dummy Map
+# '#' = Solid Wall
+# 'L', 'R', 'B' = Rotators (Left, Right, Back)
+# '*' = Fake Wall
+
+MAP
+#########
+#       #####
+# # # #   * #
+#  L L  ### #
+# # # #   * #
+#  L L  #####
+# # # # #
+#       #
+#########
+
+START = 7,1,1
+BUTTON = 7,1,1
+DOOR = 7,2,1
+DOOR = 7,4,1
+BUTTON = 7,3,1
