@@ -2,7 +2,7 @@
 NAMES		= test_shapes test_level test_perlin
 CC		= gcc
 CFLAGS		+= -I.. $(shell sdl-config --cflags) -Wall -g
-LDFLAGS		= $(shell sdl-config --libs) -lGL
+LDFLAGS		= $(shell sdl-config --libs) -lGL -lm
 CSOURCES	= test_shapes.c test_level.c test_perlin.c
 COMMON_O	= ../video.o ../camera.o ../vector.o ../mesh.o
 SHAPES_O	= $(COMMON_O) test_shapes.o

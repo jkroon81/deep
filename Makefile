@@ -4,7 +4,7 @@ VERSION		= 0.1.16
 CC		= gcc
 CFLAGS		+= -D_VERSION=\"$(VERSION)\" -Wall -g \
 		   $(shell sdl-config --cflags)
-LDFLAGS		= $(shell sdl-config --libs) -lGL
+LDFLAGS		= $(shell sdl-config --libs) -lGL -lm
 CSOURCES	= video.c camera.c vector.c mesh.c level.c being.c perlin.c \
 		  list.c entity.c square.c gui.c timer.c
 INCLUDES	= video.h camera.h vector.h mesh.h level.h being.h perlin.h \
